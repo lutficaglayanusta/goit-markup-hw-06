@@ -649,4 +649,54 @@ a{
     .futures .futures-property{
         flex-direction: column;
     }
+    .futures .futures-property .futures-item{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .futures .futures-property .futures-item .image{
+        display: none;
+    }
+    .futures .futures-property .futures-item .heading{
+        text-align: center;
+    }
+    .team .team-member{
+        flex-direction: column;
+    }
+    .team .team-member .member{
+        margin: 0 auto;
+    }
+    .portfolio .portfolio-place{
+        width: 90%;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .new-container{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer .social-media-info{
+        text-align: center;
+    }
+    .footer-form{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .footer-form .form{
+        flex-direction: column;
+        
+    }
+    .footer .footer-form .form .form-button{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer .footer-form p{
+        text-align: center;
+    }
 }
