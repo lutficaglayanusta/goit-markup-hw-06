@@ -26,26 +26,72 @@
           <a class="logo" href="./index.html"
             >web<span class="text">Studio</span></a
           >
+          <div class="mobil-menu">
+            <button onclick="hideMobilMenu()" class="modal-button" type="button">
+              <svg class="icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul>
+              <li class="nav_same">
+                <a class="studio" href="./index.html">Studio</a>
+              </li>
+              <li class="nav_same">
+                <a class="studio" href="">Portfolio</a>
+              </li>
+              <li class="nav_same">
+                <a class="studio" href="">Contacts</a>
+              </li>
+            </ul>
+            <address class="address">
+              <ul class="address-contact">
+                <li>
+                  <a class="address-info" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="address-info" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
           <ul class="nav-menu">
-            <li class="nav_same">
+            <li class="nav_same hideOnMobile">
               <a class="studio" href="./index.html">Studio</a>
             </li>
-            <li class="nav_same">
+            <li class="nav_same hideOnMobile">
               <a class="studio" href="">Portfolio</a>
             </li>
-            <li class="nav_same">
+            <li class="nav_same hideOnMobile">
               <a class="studio" href="">Contacts</a>
+            </li>
+            <li onclick="showMobilMenu()" class="nav_same menu-button">
+              <a href="#">
+                <svg
+                  class="icon icon-heroicons-solid_menu"
+                  width="26"
+                  height="26"
+                >
+                  <use
+                    href="./images/icons.svg#icon-heroicons-solid_menu"
+                  ></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
         <address class="address">
           <ul class="address-contact">
-            <li>
+            <li class="hideOnMobile">
               <a class="address-info" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="hideOnMobile">
               <a class="address-info" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -503,7 +549,7 @@
     </footer>
     <div class="modal-window isopen">
       <div class="modal-container">
-        <button class="modal-button" type="button">
+        <button onclick="hidebar()" class="modal-button" type="button">
           <svg class="icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -583,5 +629,22 @@
         </form>
       </div>
     </div>
+
+    <script>
+      function hidebar() {
+        const hideModal = document.querySelector('.isopen');
+
+        hideModal.style.display = 'none';
+      }
+      function showMobilMenu() {
+        const mobilMenu = document.querySelector('.mobil-menu');
+
+        mobilMenu.style.display = 'flex';
+      }
+      function hideMobilMenu(){
+        const mobilMenu = document.querySelector(".mobil-menu")
+        mobilMenu.style.display= "none"
+      }
+    </script>
   </body>
 </html>
