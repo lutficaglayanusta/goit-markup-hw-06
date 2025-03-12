@@ -27,36 +27,70 @@
             >web<span class="text">Studio</span></a
           >
           <div class="mobil-menu">
-            <button onclick="hideMobilMenu()" class="modal-button" type="button">
-              <svg class="icon" width="8" height="8">
+            <button
+              onclick="hideMobilMenu()"
+              class="modal-button"
+              type="button"
+            >
+              <svg class="icon" width="22" height="22">
                 <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
-            <ul>
-              <li class="nav_same">
-                <a class="studio" href="./index.html">Studio</a>
+            <ul class="mobil-nav-menu">
+              <li class="mobil-nav_same">
+                <a  href="./index.html">Studio</a>
               </li>
-              <li class="nav_same">
-                <a class="studio" href="">Portfolio</a>
+              <li class="mobil-nav_same">
+                <a  href="">Portfolio</a>
               </li>
-              <li class="nav_same">
-                <a class="studio" href="">Contacts</a>
+              <li class="mobil-nav_same">
+                <a  href="">Contacts</a>
               </li>
             </ul>
-            <address class="address">
-              <ul class="address-contact">
+            <address class="mobil-address">
+              <ul class="mobil-address-contact">
                 <li>
-                  <a class="address-info" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
+                  <a class="mobil-address-info" href="mailto:info@devstudio.com"
+                    >+11 (000) 111-11-11</a
                   >
                 </li>
                 <li>
-                  <a class="address-info" href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
+                  <a class="mobil-address-info" href="tel:+110001111111"
+                    >info@devstudio.com</a
                   >
                 </li>
               </ul>
             </address>
+            <ul class="mobil-social-media">
+              <li class="mobil-social-media-item">
+                <a class="mobil-icon-media" href="">
+                  <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-Ellipse"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobil-social-media-item">
+                <a class="mobil-icon-media" href="">
+                  <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-Ellipse-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobil-social-media-item">
+                <a class="mobil-icon-media" href="">
+                  <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-Ellipse-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobil-social-media-item">
+                <a class="mobil-icon-media" href="">
+                  <svg class="icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-Ellipse-3"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
 
           <ul class="nav-menu">
@@ -641,9 +675,9 @@
 
         mobilMenu.style.display = 'flex';
       }
-      function hideMobilMenu(){
-        const mobilMenu = document.querySelector(".mobil-menu")
-        mobilMenu.style.display= "none"
+      function hideMobilMenu() {
+        const mobilMenu = document.querySelector('.mobil-menu');
+        mobilMenu.style.display = 'none';
       }
     </script>
   </body>
