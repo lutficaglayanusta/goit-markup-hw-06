@@ -352,6 +352,7 @@ a{
     margin-bottom: 50px;
 }
 .footer .social-media-info{
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -413,6 +414,7 @@ a{
     margin-top: 50px;
 }
 .footer .footer-form p{
+    text-align: center;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -440,6 +442,8 @@ a{
 }
 .footer .footer-form .form .form-button{
     min-width: 165px;
+    width: 70%;
+    margin: 0 auto;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -473,7 +477,7 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 408px;
+    width: 90%;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -686,7 +690,10 @@ a{
 .mobil-menu .mobil-nav_same{
     font-size: 35px ;
 }
-.mobil-menu .mobil-nav_same a{
+.mobil-menu .mobil-nav_same:first-child a{
+    color: #404BBF;
+}
+.mobil-menu .mobil-nav_same a {
     color: black;
 }
 .mobil-menu .mobil-address{
@@ -696,6 +703,9 @@ a{
 .mobil-menu .mobil-address .mobil-address-contact li{
     margin-left: 10px;
     margin-top: 15px;
+}
+.mobil-menu .mobil-address .mobil-address-contact li:first-child a{
+    color: #4D5AE5;
 }
 .mobil-menu .mobil-address .mobil-address-info{
     color: #434455;
@@ -764,7 +774,18 @@ a{
     .footer .info{
         max-width: 300px;
     }
-    
+    .footer .social-media-info{
+        text-align: left;
+    }
+    .footer .footer-form p{
+        text-align: left;
+    }
+    .modal-window .modal-container{
+        width: 408px;
+    }
+    .footer .footer-form .form .form-button {
+        width: 100%;
+    }
 }
 @media (min-width:1158px){
 
@@ -804,5 +825,7 @@ a{
     .footer .info{
         max-width: 264px;
     }
-
+    .team .team-member{
+        flex-wrap: nowrap;
+    }
 }
